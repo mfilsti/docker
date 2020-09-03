@@ -1,11 +1,11 @@
 version: '3'
 services:
   prueba:
-    image: "openjdk:8-jre-alpine"
+    image: "sybase/reverent:1.1"
     ports:
-      - "7070:7070"
+      - "5000:5000"
     expose:
-      - "7070"
+      - "5000"
     networks:
       - newco-network3
 networks:
