@@ -1,0 +1,91 @@
+<testsuite failures="2" name="src/demo/api/users.feature" skipped="0" tests="2" time="0">
+  <testcase classname="src.demo.api.users" name="get all users and then get the first user by id" time="0">
+    <failure message="users.feature:7 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;&#10;  var env = karate.env; // get system property 'karate.env'&#13;&#10;  karate.log('karate.env system property was:', env);&#13;&#10;  if (!env) {&#13;&#10;    env = 'desa';&#13;&#10;  }&#13;&#10;  var config = {&#13;&#10;    env: env,&#13;&#10;&#9;baseUrl:'http://newco3.arg.igrupobbva',&#13;&#10;&#9;capa:'/apibbvachannel',&#13;&#10;&#9;service:'/accounts',&#13;&#10;&#9;endpoint: '/accounts',&#13;&#10;  }&#13;&#10;  if (env == 'desa') {&#13;&#10;   &#9;config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;&#10;   &#9;config.capa:'/apibbvachannel';&#13;&#10;   &#9;config.service:'/accounts';&#13;&#10;    config.endpoint: '/accounts';&#13;&#10;  } else if (env == 'docker') {&#13;&#10;  }&#13;&#10;  return config;&#13;&#10;}, &lt;eval&gt;:15:18 Expected ; but found :&#13;&#10;   &#9;config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;&#10;   &#9;              ^ in &lt;eval&gt; at line number 15 at column number 18">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:7 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  if (!env) {&#13;
+    env = 'desa';&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+	baseUrl:'http://newco3.arg.igrupobbva',&#13;
+	capa:'/apibbvachannel',&#13;
+	service:'/accounts',&#13;
+	endpoint: '/accounts',&#13;
+  }&#13;
+  if (env == 'desa') {&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	config.capa:'/apibbvachannel';&#13;
+   	config.service:'/accounts';&#13;
+    config.endpoint: '/accounts';&#13;
+  } else if (env == 'docker') {&#13;
+  }&#13;
+  return config;&#13;
+}, &lt;eval&gt;:15:18 Expected ; but found :&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	              ^ in &lt;eval&gt; at line number 15 at column number 18&#13;
+	at ✽.* scenario init failed (users.feature:7)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.users" name="create a user and then get it by id" time="0">
+    <failure message="users.feature:18 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;&#10;  var env = karate.env; // get system property 'karate.env'&#13;&#10;  karate.log('karate.env system property was:', env);&#13;&#10;  if (!env) {&#13;&#10;    env = 'desa';&#13;&#10;  }&#13;&#10;  var config = {&#13;&#10;    env: env,&#13;&#10;&#9;baseUrl:'http://newco3.arg.igrupobbva',&#13;&#10;&#9;capa:'/apibbvachannel',&#13;&#10;&#9;service:'/accounts',&#13;&#10;&#9;endpoint: '/accounts',&#13;&#10;  }&#13;&#10;  if (env == 'desa') {&#13;&#10;   &#9;config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;&#10;   &#9;config.capa:'/apibbvachannel';&#13;&#10;   &#9;config.service:'/accounts';&#13;&#10;    config.endpoint: '/accounts';&#13;&#10;  } else if (env == 'docker') {&#13;&#10;  }&#13;&#10;  return config;&#13;&#10;}, &lt;eval&gt;:15:18 Expected ; but found :&#13;&#10;   &#9;config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;&#10;   &#9;              ^ in &lt;eval&gt; at line number 15 at column number 18">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:7 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  if (!env) {&#13;
+    env = 'desa';&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+	baseUrl:'http://newco3.arg.igrupobbva',&#13;
+	capa:'/apibbvachannel',&#13;
+	service:'/accounts',&#13;
+	endpoint: '/accounts',&#13;
+  }&#13;
+  if (env == 'desa') {&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	config.capa:'/apibbvachannel';&#13;
+   	config.service:'/accounts';&#13;
+    config.endpoint: '/accounts';&#13;
+  } else if (env == 'docker') {&#13;
+  }&#13;
+  return config;&#13;
+}, &lt;eval&gt;:15:18 Expected ; but found :&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	              ^ in &lt;eval&gt; at line number 15 at column number 18&#13;
+	at ✽.* scenario init failed (users.feature:7)&#13;
+
+* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:18 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  if (!env) {&#13;
+    env = 'desa';&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+	baseUrl:'http://newco3.arg.igrupobbva',&#13;
+	capa:'/apibbvachannel',&#13;
+	service:'/accounts',&#13;
+	endpoint: '/accounts',&#13;
+  }&#13;
+  if (env == 'desa') {&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	config.capa:'/apibbvachannel';&#13;
+   	config.service:'/accounts';&#13;
+    config.endpoint: '/accounts';&#13;
+  } else if (env == 'docker') {&#13;
+  }&#13;
+  return config;&#13;
+}, &lt;eval&gt;:15:18 Expected ; but found :&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	              ^ in &lt;eval&gt; at line number 15 at column number 18&#13;
+	at ✽.* scenario init failed (users.feature:18)</failure>
+  </testcase>
+</testsuite>

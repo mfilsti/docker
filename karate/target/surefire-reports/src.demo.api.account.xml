@@ -1,0 +1,56 @@
+<testsuite failures="0" name="src/demo/api/account.feature" skipped="0" tests="3" time="14.422413">
+  <testcase classname="src.demo.api.account" name="validar servicio Accounts.Cliente:'00671612'" time="14.079084">
+    <system-out>* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.api.account" name="validar servicio Accounts.Cliente:'00672309'" time="0.163258">
+    <system-out>* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.api.account" name="validar servicio Accounts.Cliente:'00670996'" time="0.180072">
+    <system-out>* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl+capa+service+endpoint ....................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

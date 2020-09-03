@@ -1,0 +1,35 @@
+{
+  "E400":{
+    "error_code":"invalid_request",
+    "message":"The request performed is not supported."
+  },
+  "E401":{
+    "error_code":"invalid_credentials",
+    "message":"Invalid or missing credentials"
+  },
+  "E404":{
+    "message":"No accounts were found for the user."
+  },
+  "E500":{
+    "error":"internal_server_error",
+    "message":"Unexpected error. Please try again."
+  },
+  "E412":{
+    "limite_diario":{
+      "error_code": "daily_limit_exceeded",
+      "message": "Daily Transfer amount of 3000 exceeded."
+    },
+    "saldo_insuficiente":{
+      "error_code": "insuficient_balance",
+      "message": "The account has insufficient founds"
+    },
+    "cuenta_invalida":{
+      "error_code": "target_not_reachable",
+      "message": "The destination account is not reachable"
+    },
+    "misma_cuenta":{
+      "error_code": "equal_tocbu_fromcbu",
+      "message": "Precondition Failed"
+    }
+  }
+}

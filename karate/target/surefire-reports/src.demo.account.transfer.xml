@@ -1,0 +1,18 @@
+<testsuite failures="0" name="src/demo/account/transfer.feature" skipped="0" tests="1" time="2.279977">
+  <testcase classname="src.demo.account.transfer" name="realizar transferencia" time="2.279977">
+    <system-out>* url baseUrl + pathTransfer .............................................. passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 0.1 .................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

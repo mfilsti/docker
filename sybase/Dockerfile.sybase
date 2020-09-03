@@ -1,0 +1,3 @@
+FROM sybase/reverent:1.1
+MAINTAINER mfilsti
+EXPOSE 5000

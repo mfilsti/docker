@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.demo.account.transfer</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-08-21 07:16:48 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:23]">[1.1:23] realizar transferencia </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/demo/account/transfer.feature</span><span class="feature-description">validar servicio transfer</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:23]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:23]</span><span class="scenario-name">realizar transferencia </span>
+</div>
+<div class="scenario-time passed">ms: 2280</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:23]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:23]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url baseUrl + pathTransfer</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="preformatted" data-parent="1">07:16:45.428 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.1:23]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def req = read('file:data/transfer_request.json')</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row" data-parent="[1.1:23]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[1.1:23]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* def response_transfer = read('file:data/transfer_response.json')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1.1:23]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* def cliente = read('file:data/cliente.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* set req.document_id = '00671612'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash']</div>
+</div>
+<div class="time-cell passed">39</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu']</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* set req.amount = 0.1</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">And request req</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">2179</div>
+</div>
+<div class="preformatted" data-parent="12">07:16:46.871 request:
+1 &gt; POST http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 895
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00671612","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:16:47.893 response time in milliseconds: 1016,04
+1 &lt; 201
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Fri, 21 Aug 2020 14:17:30 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=1161B6D74CF9E415005671DC3F987F6B
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"reference_id":"00655c01515c413718fe0000012704","updated_at":"2020-08-21T11:17:31.463-03:00","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","status":"APPROVED"}</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="13">07:16:47.899 [print] {
+  "from_cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "00655c01515c413718fe0000012704",
+  "updated_at": "2020-08-21T11:17:31.463-03:00",
+  "to_cbu": "0170218940000003993471",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+when:
+  backend: backend
+  method: POST
+  path: /ServicioInicial
+  match:
+    body.BbvaPaquete.Header.Empresa: "BBVA"
+    body.BbvaPaquete.Header.Aplicacion: "APIBBVABUSINESS"
+    body.BbvaPaquete.Header.Modulo: "TRANSFERENCIAS_PS"
+    body.BbvaPaquete.Header.Requerimiento: "CONSULTA_CUENTAS_SALDOS_API_GLOBAL"
+    body.BbvaPaquete.Datos.numerocliente: "00925721"
+    body.BbvaPaquete.Datos.tipodocumento: ""
+    body.BbvaPaquete.Datos.nrodocumento: ""
+    body.BbvaPaquete.Datos.cbu: ""
+then:
+  - return:
+      :status: 200
+      :headers:
+        content-type: applicaton/xml;charset=UTF-8
+      :body: '<BbvaPaquete>
+   <Header>
+      <Empresa>BBVA</Empresa>
+      <Aplicacion>APIBBVABUSINESS</Aplicacion>
+      <Modulo>TRANSFERENCIAS_PS_CICS7</Modulo>
+      <IdUsuario>DEFAULT</IdUsuario>
+      <IdSesion>2005070200000463</IdSesion>
+      <IdProceso>20050702000004630001</IdProceso>
+      <Requerimiento Undo="false">CONSULTA_CUENTAS_SALDOS_API_GLOBAL</Requerimiento>
+      <FechaPedido>29/07/2020</FechaPedido>
+      <HoraPedido>10:58:08</HoraPedido>
+      <FechaProc>18/08/2020</FechaProc>
+      <HoraProc>15:58:08</HoraProc>
+      <TipoMensaje>R</TipoMensaje>
+   </Header>
+   <Respuesta Tipo="OK">
+      <Avisos>
+         <Aviso Codigo="AHA0993">CONSULTA EFECTUADA.</Aviso>
+      </Avisos>
+      <Resultado>
+         <numerocliente>00925721</numerocliente>
+         <mail>emanuel.albertogomez@bbva.com</mail>
+         <tipodocumento>49</tipodocumento>
+         <tarjetadebito>4517700005263036</tarjetadebito>
+         <lista nombre="accounts">
+            <elemento>
+               <currencyCode>ARS</currencyCode>
+               <cbu>0170118620000084931454</cbu>
+               <accountBalance>000000000000500</accountBalance>
+               <accountType>CC</accountType>
+               <updatedAt>2020-07-23T15:28:40-00:00</updatedAt>
+               <signAccountBalance>-</signAccountBalance>
+               <accountNumber>201188493145</accountNumber>
+            </elemento>
+         </lista>
+         <nrodocumento>0020182836312</nrodocumento>
+         <nombre>BIGNONE ANDRES GUSTAVO</nombre>
+      </Resultado>
+   </Respuesta>
+</BbvaPaquete>'
+
+#  close
+---
+
+when:
+  backend: backend
+  method: POST
+  path: /ServicioInicial
+  match:
+    body.BbvaPaquete.Header.Empresa: "BBVA"
+    body.BbvaPaquete.Header.Aplicacion: "APIBBVABUSINESS"
+    body.BbvaPaquete.Header.Modulo: "TRANSFERENCIAS_PS"
+    body.BbvaPaquete.Header.Requerimiento: "CONSULTA_CUENTAS_SALDOS_API_GLOBAL"
+    body.BbvaPaquete.Datos.numerocliente: "00671612"
+    body.BbvaPaquete.Datos.tipodocumento: ""
+    body.BbvaPaquete.Datos.nrodocumento: ""
+    body.BbvaPaquete.Datos.cbu: ""
+then:
+  - return:
+      :status: 200
+      :headers:
+        content-type: applicaton/xml;charset=UTF-8
+      :body: '<BbvaPaquete>
+  <Header>
+     <Empresa>BBVA</Empresa>
+     <Aplicacion>APIBBVABUSINESS</Aplicacion>
+     <Modulo>TRANSFERENCIAS_PS_CICS7</Modulo>
+     <IdUsuario>DEFAULT</IdUsuario>
+     <IdSesion>2005070200000463</IdSesion>
+     <IdProceso>20050702000004630001</IdProceso>
+     <Requerimiento Undo="false">CONSULTA_CUENTAS_SALDOS_API_GLOBAL</Requerimiento>
+     <FechaPedido>29/07/2020</FechaPedido>
+     <HoraPedido>10:58:08</HoraPedido>
+     <FechaProc>18/08/2020</FechaProc>
+     <HoraProc>15:58:08</HoraProc>
+     <TipoMensaje>R</TipoMensaje>
+  </Header>
+  <Respuesta Tipo="OK">
+     <Avisos>
+        <Aviso Codigo="AHA0993">CONSULTA EFECTUADA.</Aviso>
+     </Avisos>
+     <Resultado>
+        <numerocliente>00671612</numerocliente>
+        <mail>emanuel.albertogomez@bbva.com</mail>
+        <tipodocumento>49</tipodocumento>
+        <tarjetadebito>4517700005263036</tarjetadebito>
+        <lista nombre="accounts">
+           <elemento>
+              <currencyCode>ARS</currencyCode>
+              <cbu>0170218920000000244899</cbu>
+              <accountBalance>390506.65</accountBalance>
+              <accountType>CC</accountType>
+              <updatedAt>2020-07-31T10:59:45Z</updatedAt>
+              <signAccountBalance>-</signAccountBalance>
+              <accountNumber>202180024489</accountNumber>
+           </elemento>
+           <elemento>
+            <currencyCode>ARS</currencyCode>
+            <cbu>0170218940000000676371</cbu>
+            <accountBalance>253708.77</accountBalance>
+            <accountType>CC</accountType>
+            <updatedAt>2020-07-15T16:54:53Z</updatedAt>
+            <signAccountBalance>-</signAccountBalance>
+            <accountNumber>402180067637</accountNumber>
+         </elemento>
+        </lista>
+        <nrodocumento>0020182836312</nrodocumento>
+        <nombre>BIGNONE ANDRES GUSTAVO</nombre>
+     </Resultado>
+  </Respuesta>
+</BbvaPaquete>'
+
+#  close
+---
+
+when:
+  backend: backend
+  method: POST
+  path: /ServicioInicial
+  match:
+    body.BbvaPaquete.Header.Empresa: "BBVA"
+    body.BbvaPaquete.Header.Aplicacion: "APIBBVABUSINESS"
+    body.BbvaPaquete.Header.Modulo: "TRANSFERENCIAS_PS"
+    body.BbvaPaquete.Header.Requerimiento: "CONSULTA_CUENTAS_SALDOS_API_GLOBAL"
+    body.BbvaPaquete.Datos.numerocliente: "00999999"
+    body.BbvaPaquete.Datos.tipodocumento: ""
+    body.BbvaPaquete.Datos.nrodocumento: ""
+    body.BbvaPaquete.Datos.cbu: ""
+then:
+  - return:
+      :status: 200
+      :headers:
+        content-type: applicaton/xml;charset=UTF-8
+      :body: '<BbvaPaquete>
+    <Header>
+       <Empresa>BBVA</Empresa>
+       <Aplicacion>APIBBVABUSINESS</Aplicacion>
+       <Modulo>TRANSFERENCIAS_PS_CICS7</Modulo>
+       <IdUsuario>DEFAULT</IdUsuario>
+       <IdSesion>2005070200000463</IdSesion>
+       <IdProceso>20050702000004630001</IdProceso>
+       <Requerimiento Undo="false">CONSULTA_CUENTAS_SALDOS_API_GLOBAL</Requerimiento>
+       <FechaPedido>29/07/2020</FechaPedido>
+       <HoraPedido>10:58:08</HoraPedido>
+       <FechaProc>18/08/2020</FechaProc>
+       <HoraProc>15:58:08</HoraProc>
+       <TipoMensaje>R</TipoMensaje>
+    </Header>
+    <Respuesta Tipo="OK">
+       <Avisos>
+          <Aviso Codigo="AHA0993">CONSULTA EFECTUADA.</Aviso>
+       </Avisos>
+       <Resultado>
+          <numerocliente>00925721</numerocliente>
+          <mail>emanuel.albertogomez@bbva.com</mail>
+          <tipodocumento>49</tipodocumento>
+          <tarjetadebito>4517700005263036</tarjetadebito>
+          <lista nombre="accounts">
+          </lista>
+          <nrodocumento>0020182836312</nrodocumento>
+          <nombre>BIGNONE ANDRES GUSTAVO</nombre>
+       </Resultado>
+    </Respuesta>
+ </BbvaPaquete>'

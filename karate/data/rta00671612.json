@@ -1,0 +1,20 @@
+[
+  {
+    "account_number": "202180024489",
+    "account_type": "CURRENT",
+    "account_balance": "400919.80",
+    "updated_at": "2020-05-13T14:28:24Z",
+    "cbu": "0170218920000000244899",
+    "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+    "currency_code": "ARS"
+  },
+  {
+    "account_number": "402180067637",
+    "account_type": "SAVINGS",
+    "account_balance": "250000.00",
+    "updated_at": "2020-05-13T15:04:26Z",
+    "cbu": "0170218940000000676371",
+    "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a",
+    "currency_code": "ARS"
+  }
+]

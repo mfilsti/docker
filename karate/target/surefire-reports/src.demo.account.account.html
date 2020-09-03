@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.demo.account.account</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">10</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-08-20 06:57:32 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:16]">[1.1:16] validar servicio Accounts.Cliente:'00671612' </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:17]">[1.2:17] validar servicio Accounts.Cliente:'00672309' </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.3:18]">[1.3:18] validar servicio Accounts.Cliente:'00670996' </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2.1:37]">[2.1:37] validar respuesta de la consulta de todas las cuentas de un cliente (OK) </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3.1:50]">[3.1:50] validar consulta Ok al consultar por un cbu </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3.2:51]">[3.2:51] validar consulta Ok al consultar por un cbu </a>
+</div>
+<div class="nav-item passed">
+<a href="#[4.1:67]">[4.1:67] validar que la respuesta de la consulta corresponda al cbu indicado </a>
+</div>
+<div class="nav-item passed">
+<a href="#[5.1:83]">[5.1:83] Validar error en el request (Error 400) </a>
+</div>
+<div class="nav-item passed">
+<a href="#[5.2:84]">[5.2:84] Validar error en el request (Error 400) </a>
+</div>
+<div class="nav-item passed">
+<a href="#[5.3:85]">[5.3:85] Validar error en el request (Error 400) </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/demo/account/account.feature</span><span class="feature-description">validar servicio Accounts</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:16]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.1:16]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00671612' </span>
+</div>
+<div class="scenario-time passed">ms: 2079</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:16]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="1">06:57:27.963 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">2032</div>
+</div>
+<div class="preformatted" data-parent="6">06:57:29.769 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:30.245 response time in milliseconds: 459,63
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:12 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B06F4CF9E415005671DCBD14F885
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{"cbu":"0170218920000000244899","cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","account_type":"CURRENT","account_number":"202180024489","account_balance":"387715.83","currency_code":"ARS","updated_at":"2020-08-14T16:18:34Z"},{"cbu":"0170218940000000676371","cbu_hash":"336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a","account_type":"SAVINGS","account_number":"402180067637","account_balance":"249690.85","currency_code":"ARS","updated_at":"2020-08-14T16:26:55Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="8">06:57:30.245 [print] [
+  {
+    "account_number": "202180024489",
+    "account_type": "CURRENT",
+    "account_balance": "387715.83",
+    "updated_at": "2020-08-14T16:18:34Z",
+    "cbu": "0170218920000000244899",
+    "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+    "currency_code": "ARS"
+  },
+  {
+    "account_number": "402180067637",
+    "account_type": "SAVINGS",
+    "account_balance": "249690.85",
+    "updated_at": "2020-08-14T16:26:55Z",
+    "cbu": "0170218940000000676371",
+    "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:17]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.2:17]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00672309' </span>
+</div>
+<div class="scenario-time passed">ms: 195</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:17]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="9">06:57:30.261 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">181</div>
+</div>
+<div class="preformatted" data-parent="14">06:57:30.277 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00672309
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:30.461 response time in milliseconds: 163,13
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:13 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B1B54CF9E415005671DCA6B6130C
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{"cbu":"0170118640000000846068","cbu_hash":"113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007","account_type":"SAVINGS","account_number":"401180084606","account_balance":"253931.71","currency_code":"ARS","updated_at":"2020-08-14T16:18:37Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="16">06:57:30.461 [print] [
+  {
+    "account_number": "401180084606",
+    "account_type": "SAVINGS",
+    "account_balance": "253931.71",
+    "updated_at": "2020-08-14T16:18:37Z",
+    "cbu": "0170118640000000846068",
+    "cbu_hash": "113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.3:18]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.3:18]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00670996' </span>
+</div>
+<div class="scenario-time passed">ms: 173</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.3:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="17">06:57:30.462 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">160</div>
+</div>
+<div class="preformatted" data-parent="22">06:57:30.486 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00670996
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:30.644 response time in milliseconds: 141,16
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:13 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B2844CF9E4152009ED3B358812A5
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{"cbu":"0170304520000030079915","cbu_hash":"8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f","account_type":"CURRENT","account_number":"203043007991","account_balance":"248999.04","currency_code":"ARS","updated_at":"2020-08-14T16:18:40Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="24">06:57:30.660 [print] [
+  {
+    "account_number": "203043007991",
+    "account_type": "CURRENT",
+    "account_balance": "248999.04",
+    "updated_at": "2020-08-14T16:18:40Z",
+    "cbu": "0170304520000030079915",
+    "cbu_hash": "8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2.1:37]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [2.1:37]</span><span class="scenario-name">validar respuesta de la consulta de todas las cuentas de un cliente (OK) </span>
+</div>
+<div class="scenario-time passed">ms: 333</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2.1:37]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2.1:37]bg">
+<div class="step-container" id="25">
+<div class="step-ref bg-step">25</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="25">06:57:30.675 karate.env system property was:</div>
+<div class="step-row" data-parent="[2.1:37]bg">
+<div class="step-container" id="26">
+<div class="step-ref bg-step">26</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2.1:37]bg">
+<div class="step-container" id="27">
+<div class="step-ref bg-step">27</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[2.1:37]bg">
+<div class="step-container" id="28">
+<div class="step-ref bg-step">28</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="29">
+<div class="step-ref passed">29</div>
+<div class="step-cell passed">* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="30">
+<div class="step-ref passed">30</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">177</div>
+</div>
+<div class="preformatted" data-parent="30">06:57:30.676 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:30.854 response time in milliseconds: 139,14
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:13 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B33A4CF9E4152009ED3BC040F75E
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{"cbu":"0170218920000000244899","cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","account_type":"CURRENT","account_number":"202180024489","account_balance":"387715.83","currency_code":"ARS","updated_at":"2020-08-14T16:18:34Z"},{"cbu":"0170218940000000676371","cbu_hash":"336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a","account_type":"SAVINGS","account_number":"402180067637","account_balance":"249690.85","currency_code":"ARS","updated_at":"2020-08-14T16:26:55Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="31">
+<div class="step-ref passed">31</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="32">
+<div class="step-ref passed">32</div>
+<div class="step-cell passed">And match response == '#[]'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="33">
+<div class="step-ref passed">33</div>
+<div class="step-cell passed">And match response[0].account_number == responseAccount[0].account_number</div>
+</div>
+<div class="time-cell passed">59</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="34">
+<div class="step-ref passed">34</div>
+<div class="step-cell passed">And match response[0].account_type == responseAccount[0].account_type</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="35">
+<div class="step-ref passed">35</div>
+<div class="step-cell passed">And match response[0].cbu == responseAccount[0].cbu</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="36">
+<div class="step-ref passed">36</div>
+<div class="step-cell passed">And match response[0].cbu_hash == responseAccount[0].cbu_hash</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="37">
+<div class="step-ref passed">37</div>
+<div class="step-cell passed">And match response[1].account_number == responseAccount[1].account_number</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="38">
+<div class="step-ref passed">38</div>
+<div class="step-cell passed">And match response[1].account_type == responseAccount[1].account_type</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="39">
+<div class="step-ref passed">39</div>
+<div class="step-cell passed">And match response[1].cbu == responseAccount[1].cbu</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="40">
+<div class="step-ref passed">40</div>
+<div class="step-cell passed">And match response[1].cbu_hash == responseAccount[1].cbu_hash</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3.1:50]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [3.1:50]</span><span class="scenario-name">validar consulta Ok al consultar por un cbu </span>
+</div>
+<div class="scenario-time passed">ms: 222</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3.1:50]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3.1:50]bg">
+<div class="step-container" id="41">
+<div class="step-ref bg-step">41</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="41">06:57:31.016 karate.env system property was:</div>
+<div class="step-row" data-parent="[3.1:50]bg">
+<div class="step-container" id="42">
+<div class="step-ref bg-step">42</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[3.1:50]bg">
+<div class="step-container" id="43">
+<div class="step-ref bg-step">43</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row" data-parent="[3.1:50]bg">
+<div class="step-container" id="44">
+<div class="step-ref bg-step">44</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="45">
+<div class="step-ref passed">45</div>
+<div class="step-cell passed">* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="46">
+<div class="step-ref passed">46</div>
+<div class="step-cell passed">* param cbuHash = cbu[0].cbu_hash</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="47">
+<div class="step-ref passed">47</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">180</div>
+</div>
+<div class="preformatted" data-parent="47">06:57:31.046 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:31.220 response time in milliseconds: 171,08
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:13 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B4B44CF9E415005671DC80A8B1E2
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{"cbu":"0170218920000000244899","cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","account_type":"CURRENT","account_number":"202180024489","account_balance":"387715.83","currency_code":"ARS","updated_at":"2020-08-14T16:18:34Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="48">
+<div class="step-ref passed">48</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="49">
+<div class="step-ref passed">49</div>
+<div class="step-cell passed">And match response == '#[1]'</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="50">
+<div class="step-ref passed">50</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="50">06:57:31.242 [print] [
+  {
+    "account_number": "202180024489",
+    "account_type": "CURRENT",
+    "account_balance": "387715.83",
+    "updated_at": "2020-08-14T16:18:34Z",
+    "cbu": "0170218920000000244899",
+    "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3.2:51]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [3.2:51]</span><span class="scenario-name">validar consulta Ok al consultar por un cbu </span>
+</div>
+<div class="scenario-time passed">ms: 258</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3.2:51]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3.2:51]bg">
+<div class="step-container" id="51">
+<div class="step-ref bg-step">51</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="51">06:57:31.283 karate.env system property was:</div>
+<div class="step-row" data-parent="[3.2:51]bg">
+<div class="step-container" id="52">
+<div class="step-ref bg-step">52</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">17</div>
+</div>
+<div class="step-row" data-parent="[3.2:51]bg">
+<div class="step-container" id="53">
+<div class="step-ref bg-step">53</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row" data-parent="[3.2:51]bg">
+<div class="step-container" id="54">
+<div class="step-ref bg-step">54</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="55">
+<div class="step-ref passed">55</div>
+<div class="step-cell passed">* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="56">
+<div class="step-ref passed">56</div>
+<div class="step-cell passed">* param cbuHash = cbu[1].cbu_hash</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="57">
+<div class="step-ref passed">57</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">204</div>
+</div>
+<div class="preformatted" data-parent="57">06:57:31.373 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:31.539 response time in milliseconds: 150,34
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:14 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B5FD4CF9E415005671DCF42A9F00
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{"cbu":"0170218940000000676371","cbu_hash":"336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a","account_type":"SAVINGS","account_number":"402180067637","account_balance":"249690.85","currency_code":"ARS","updated_at":"2020-08-14T16:26:55Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="58">
+<div class="step-ref passed">58</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="59">
+<div class="step-ref passed">59</div>
+<div class="step-cell passed">And match response == '#[1]'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="60">
+<div class="step-ref passed">60</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="60">06:57:31.545 [print] [
+  {
+    "account_number": "402180067637",
+    "account_type": "SAVINGS",
+    "account_balance": "249690.85",
+    "updated_at": "2020-08-14T16:26:55Z",
+    "cbu": "0170218940000000676371",
+    "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4.1:67]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [4.1:67]</span><span class="scenario-name">validar que la respuesta de la consulta corresponda al cbu indicado </span>
+</div>
+<div class="scenario-time passed">ms: 210</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[4.1:67]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[4.1:67]bg">
+<div class="step-container" id="61">
+<div class="step-ref bg-step">61</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="61">06:57:31.578 karate.env system property was:</div>
+<div class="step-row" data-parent="[4.1:67]bg">
+<div class="step-container" id="62">
+<div class="step-ref bg-step">62</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[4.1:67]bg">
+<div class="step-container" id="63">
+<div class="step-ref bg-step">63</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[4.1:67]bg">
+<div class="step-container" id="64">
+<div class="step-ref bg-step">64</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="65">
+<div class="step-ref passed">65</div>
+<div class="step-cell passed">* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="66">
+<div class="step-ref passed">66</div>
+<div class="step-cell passed">* param cbuHash = cbu[0].cbu_hash</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="67">
+<div class="step-ref passed">67</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">199</div>
+</div>
+<div class="preformatted" data-parent="67">06:57:31.603 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:31.804 response time in milliseconds: 171,06
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:14 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B6E14CF9E4152009ED3B0726DD1B
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{"cbu":"0170218920000000244899","cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","account_type":"CURRENT","account_number":"202180024489","account_balance":"387715.83","currency_code":"ARS","updated_at":"2020-08-14T16:18:34Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="68">
+<div class="step-ref passed">68</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="69">
+<div class="step-ref passed">69</div>
+<div class="step-cell passed">And match response == '#[1]'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="70">
+<div class="step-ref passed">70</div>
+<div class="step-cell passed">And match response[0].account_number == responseAccount[0].account_number</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="71">
+<div class="step-ref passed">71</div>
+<div class="step-cell passed">And match response[0].account_type == responseAccount[0].account_type</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="72">
+<div class="step-ref passed">72</div>
+<div class="step-cell passed">And match response[0].cbu == responseAccount[0].cbu</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="73">
+<div class="step-ref passed">73</div>
+<div class="step-cell passed">And match response[0].cbu_hash == responseAccount[0].cbu_hash</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[5.1:83]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [5.1:83]</span><span class="scenario-name">Validar error en el request (Error 400) </span>
+</div>
+<div class="scenario-time passed">ms: 94</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[5.1:83]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[5.1:83]bg">
+<div class="step-container" id="74">
+<div class="step-ref bg-step">74</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="74">06:57:31.820 karate.env system property was:</div>
+<div class="step-row" data-parent="[5.1:83]bg">
+<div class="step-container" id="75">
+<div class="step-ref bg-step">75</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[5.1:83]bg">
+<div class="step-container" id="76">
+<div class="step-ref bg-step">76</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[5.1:83]bg">
+<div class="step-container" id="77">
+<div class="step-ref bg-step">77</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="78">
+<div class="step-ref passed">78</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="79">
+<div class="step-ref passed">79</div>
+<div class="step-cell passed">* param cbuHash = ''</div>
+</div>
+<div class="time-cell passed">25</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="80">
+<div class="step-ref passed">80</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="preformatted" data-parent="80">06:57:31.868 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: token[0].token
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:31.869 response time in milliseconds: 11,96
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:14 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B7D04CF9E415005671DCCF15F6E2
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"error_code":"invalid_request","message":"The request performed is not supported."}</div>
+<div class="step-row">
+<div class="step-container" id="81">
+<div class="step-ref passed">81</div>
+<div class="step-cell passed">* print request</div>
+</div>
+<div class="time-cell passed">27</div>
+</div>
+<div class="preformatted" data-parent="81">06:57:31.886 [print]</div>
+<div class="step-row">
+<div class="step-container" id="82">
+<div class="step-ref passed">82</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="82">06:57:31.887 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="83">
+<div class="step-ref passed">83</div>
+<div class="step-cell passed">Then status 400</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="84">
+<div class="step-ref passed">84</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="84">06:57:31.889 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="85">
+<div class="step-ref passed">85</div>
+<div class="step-cell passed">* print message_error.E400</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="85">06:57:31.902 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="86">
+<div class="step-ref passed">86</div>
+<div class="step-cell passed">And match response == message_error.E400</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[5.2:84]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [5.2:84]</span><span class="scenario-name">Validar error en el request (Error 400) </span>
+</div>
+<div class="scenario-time passed">ms: 77</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[5.2:84]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[5.2:84]bg">
+<div class="step-container" id="87">
+<div class="step-ref bg-step">87</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="87">06:57:31.927 karate.env system property was:</div>
+<div class="step-row" data-parent="[5.2:84]bg">
+<div class="step-container" id="88">
+<div class="step-ref bg-step">88</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row" data-parent="[5.2:84]bg">
+<div class="step-container" id="89">
+<div class="step-ref bg-step">89</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[5.2:84]bg">
+<div class="step-container" id="90">
+<div class="step-ref bg-step">90</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="91">
+<div class="step-ref passed">91</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="92">
+<div class="step-ref passed">92</div>
+<div class="step-cell passed">* param cbuHash = ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="93">
+<div class="step-ref passed">93</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">28</div>
+</div>
+<div class="preformatted" data-parent="93">06:57:31.942 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: token[0].token
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:31.967 response time in milliseconds: 16,40
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:14 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B8344CF9E415005671DC4DE127F8
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"error_code":"invalid_request","message":"The request performed is not supported."}</div>
+<div class="step-row">
+<div class="step-container" id="94">
+<div class="step-ref passed">94</div>
+<div class="step-cell passed">* print request</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="preformatted" data-parent="94">06:57:31.989 [print]</div>
+<div class="step-row">
+<div class="step-container" id="95">
+<div class="step-ref passed">95</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">13</div>
+</div>
+<div class="preformatted" data-parent="95">06:57:32.002 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="96">
+<div class="step-ref passed">96</div>
+<div class="step-cell passed">Then status 400</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="97">
+<div class="step-ref passed">97</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="97">06:57:32.004 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="98">
+<div class="step-ref passed">98</div>
+<div class="step-cell passed">* print message_error.E400</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="98">06:57:32.006 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="99">
+<div class="step-ref passed">99</div>
+<div class="step-cell passed">And match response == message_error.E400</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[5.3:85]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [5.3:85]</span><span class="scenario-name">Validar error en el request (Error 400) </span>
+</div>
+<div class="scenario-time passed">ms: 63</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[5.3:85]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[5.3:85]bg">
+<div class="step-container" id="100">
+<div class="step-ref bg-step">100</div>
+<div class="step-cell passed">* url baseUrl + pathAccount</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="100">06:57:32.030 karate.env system property was:</div>
+<div class="step-row" data-parent="[5.3:85]bg">
+<div class="step-container" id="101">
+<div class="step-ref bg-step">101</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[5.3:85]bg">
+<div class="step-container" id="102">
+<div class="step-ref bg-step">102</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row" data-parent="[5.3:85]bg">
+<div class="step-container" id="103">
+<div class="step-ref bg-step">103</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="104">
+<div class="step-ref passed">104</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="105">
+<div class="step-ref passed">105</div>
+<div class="step-cell passed">* param cbuHash = ''</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="106">
+<div class="step-ref passed">106</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">38</div>
+</div>
+<div class="preformatted" data-parent="106">06:57:32.056 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts?cbuHash=
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: token[0].token
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+06:57:32.074 response time in milliseconds: 15,14
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 20 Aug 2020 13:58:14 GMT
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=0C29B8A64CF9E4152009ED3B026A501E
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+{"error_code":"invalid_request","message":"The request performed is not supported."}</div>
+<div class="step-row">
+<div class="step-container" id="107">
+<div class="step-ref passed">107</div>
+<div class="step-cell passed">* print request</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="107">06:57:32.080 [print]</div>
+<div class="step-row">
+<div class="step-container" id="108">
+<div class="step-ref passed">108</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="108">06:57:32.086 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="109">
+<div class="step-ref passed">109</div>
+<div class="step-cell passed">Then status 400</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="110">
+<div class="step-ref passed">110</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="110">06:57:32.091 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="111">
+<div class="step-ref passed">111</div>
+<div class="step-cell passed">* print message_error.E400</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="111">06:57:32.095 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}</div>
+<div class="step-row">
+<div class="step-container" id="112">
+<div class="step-ref passed">112</div>
+<div class="step-cell passed">And match response == message_error.E400</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

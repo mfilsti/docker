@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/demo/api/account.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Thu Aug 20 06:57:32 PDT 2020</td>
+            <td>20 ago 2020, 06:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/demo/api/account.feature</td>
+                    <td      class="passed"    >24</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">24</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="14422413232">14s 422ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/demo/api/account.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">validar servicio Accounts</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">280ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl+capa+service+endpoint</span>
+  
+  <span class="lead-duration duration">020ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>11:25:44.105 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseAccount = read('file:data/rta00671612.json')</span>
+  
+  <span class="lead-duration duration">127ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message_error = read('file:data/error_message_account.json')</span>
+  
+  <span class="lead-duration duration">124ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cbu = read('file:data/cbuHash.json')</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_account.html">@account</a>
+      </div>
+
+  
+  <span class="lead-duration duration">13s 798ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">validar servicio Accounts.Cliente:'00671612'</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">13s 796ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>11:26:02.230 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.213 response time in milliseconds: 1678,56
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:44 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D1824CF9E4152009ED3B30AB885D
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{&quot;cbu&quot;:&quot;0170218920000000244899&quot;,&quot;cbu_hash&quot;:&quot;001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3&quot;,&quot;account_type&quot;:&quot;CURRENT&quot;,&quot;account_number&quot;:&quot;202180024489&quot;,&quot;account_balance&quot;:&quot;387715.83&quot;,&quot;currency_code&quot;:&quot;ARS&quot;,&quot;updated_at&quot;:&quot;2020-08-14T16:18:34Z&quot;},{&quot;cbu&quot;:&quot;0170218940000000676371&quot;,&quot;cbu_hash&quot;:&quot;336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a&quot;,&quot;account_type&quot;:&quot;SAVINGS&quot;,&quot;account_number&quot;:&quot;402180067637&quot;,&quot;account_balance&quot;:&quot;249690.85&quot;,&quot;currency_code&quot;:&quot;ARS&quot;,&quot;updated_at&quot;:&quot;2020-08-14T16:26:55Z&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>11:26:04.213 [print] [
+  {
+    &quot;account_number&quot;: &quot;202180024489&quot;,
+    &quot;account_type&quot;: &quot;CURRENT&quot;,
+    &quot;account_balance&quot;: &quot;387715.83&quot;,
+    &quot;updated_at&quot;: &quot;2020-08-14T16:18:34Z&quot;,
+    &quot;cbu&quot;: &quot;0170218920000000244899&quot;,
+    &quot;cbu_hash&quot;: &quot;001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3&quot;,
+    &quot;currency_code&quot;: &quot;ARS&quot;
+  },
+  {
+    &quot;account_number&quot;: &quot;402180067637&quot;,
+    &quot;account_type&quot;: &quot;SAVINGS&quot;,
+    &quot;account_balance&quot;: &quot;249690.85&quot;,
+    &quot;updated_at&quot;: &quot;2020-08-14T16:26:55Z&quot;,
+    &quot;cbu&quot;: &quot;0170218940000000676371&quot;,
+    &quot;cbu_hash&quot;: &quot;336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a&quot;,
+    &quot;currency_code&quot;: &quot;ARS&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">006ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl+capa+service+endpoint</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>11:26:04.229 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseAccount = read('file:data/rta00671612.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message_error = read('file:data/error_message_account.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cbu = read('file:data/cbuHash.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_account.html">@account</a>
+      </div>
+
+  
+  <span class="lead-duration duration">156ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">validar servicio Accounts.Cliente:'00672309'</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">154ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>11:26:04.244 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00672309
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.369 response time in milliseconds: 144,89
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:45 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D5CF4CF9E4152009ED3B4B82929A
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{&quot;cbu&quot;:&quot;0170118640000000846068&quot;,&quot;cbu_hash&quot;:&quot;113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007&quot;,&quot;account_type&quot;:&quot;SAVINGS&quot;,&quot;account_number&quot;:&quot;401180084606&quot;,&quot;account_balance&quot;:&quot;253931.71&quot;,&quot;currency_code&quot;:&quot;ARS&quot;,&quot;updated_at&quot;:&quot;2020-08-14T16:18:37Z&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>11:26:04.372 [print] [
+  {
+    &quot;account_number&quot;: &quot;401180084606&quot;,
+    &quot;account_type&quot;: &quot;SAVINGS&quot;,
+    &quot;account_balance&quot;: &quot;253931.71&quot;,
+    &quot;updated_at&quot;: &quot;2020-08-14T16:18:37Z&quot;,
+    &quot;cbu&quot;: &quot;0170118640000000846068&quot;,
+    &quot;cbu_hash&quot;: &quot;113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007&quot;,
+    &quot;currency_code&quot;: &quot;ARS&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">012ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl+capa+service+endpoint</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>11:26:04.385 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseAccount = read('file:data/rta00671612.json')</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def message_error = read('file:data/error_message_account.json')</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cbu = read('file:data/cbuHash.json')</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_account.html">@account</a>
+      </div>
+
+  
+  <span class="lead-duration duration">167ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">validar servicio Accounts.Cliente:'00670996'</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">165ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>11:26:04.436 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00670996
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.587 response time in milliseconds: 156,60
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:46 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D6874CF9E415005671DC8F5CC77F
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{&quot;cbu&quot;:&quot;0170304520000030079915&quot;,&quot;cbu_hash&quot;:&quot;8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f&quot;,&quot;account_type&quot;:&quot;CURRENT&quot;,&quot;account_number&quot;:&quot;203043007991&quot;,&quot;account_balance&quot;:&quot;248999.04&quot;,&quot;currency_code&quot;:&quot;ARS&quot;,&quot;updated_at&quot;:&quot;2020-08-14T16:18:40Z&quot;}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>11:26:04.587 [print] [
+  {
+    &quot;account_number&quot;: &quot;203043007991&quot;,
+    &quot;account_type&quot;: &quot;CURRENT&quot;,
+    &quot;account_balance&quot;: &quot;248999.04&quot;,
+    &quot;updated_at&quot;: &quot;2020-08-14T16:18:40Z&quot;,
+    &quot;cbu&quot;: &quot;0170304520000030079915&quot;,
+    &quot;cbu_hash&quot;: &quot;8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f&quot;,
+    &quot;currency_code&quot;: &quot;ARS&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

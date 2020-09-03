@@ -1,0 +1,426 @@
+07:16:45.428 karate.env system property was:  
+07:16:46.871 request:
+1 > POST http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 895
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00671612
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00671612","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:16:47.893 response time in milliseconds: 1016,04
+1 < 201
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Fri, 21 Aug 2020 14:17:30 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=1161B6D74CF9E415005671DC3F987F6B
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"reference_id":"00655c01515c413718fe0000012704","updated_at":"2020-08-21T11:17:31.463-03:00","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","status":"APPROVED"}
+
+07:16:47.899 [print] {
+  "from_cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "00655c01515c413718fe0000012704",
+  "updated_at": "2020-08-21T11:17:31.463-03:00",
+  "to_cbu": "0170218940000003993471",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}
+
+ost: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00671612
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00671612","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+08:35:31.867 response time in milliseconds: 1726,99
+1 < 201
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Thu, 20 Aug 2020 15:36:12 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=0C8369C74CF9E4152009ED3BE618B7AA
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+{"reference_id":"0065072e0b283630d0dc0000012698","updated_at":"2020-08-20T12:36:14.714-03:00","amount":0.1,"currency_code":"ARS","from_cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","status":"APPROVED"}
+
+08:35:31.869 [print] {
+  "from_cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "0065072e0b283630d0dc0000012698",
+  "updated_at": "2020-08-20T12:36:14.714-03:00",
+  "to_cbu": "0170218940000003993471",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}
+
+ > Content-Length: 895
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00672309
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00672309","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:04:04.176 response time in milliseconds: 1258,32
+1 < 201
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Thu, 20 Aug 2020 14:04:45 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=0C2FAF734CF9E415005671DC7A3A8600
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"reference_id":"00651bd73fb95b4e90150000012682","updated_at":"2020-08-20T11:04:47.057-03:00","amount":0.1,"currency_code":"ARS","from_cbu_hash":"113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","status":"APPROVED"}
+
+07:04:04.180 [print] {
+  "from_cbu_hash": "113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "00651bd73fb95b4e90150000012682",
+  "updated_at": "2020-08-20T11:04:47.057-03:00",
+  "to_cbu": "0170218940000003993471",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}
+
+07:04:04.203 karate.env system property was:  
+07:04:04.286 karate.env system property was:  
+07:04:04.343 request:
+1 > POST http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 895
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00670996
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00670996","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:04:05.185 response time in milliseconds: 807,55
+1 < 201
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Thu, 20 Aug 2020 14:04:47 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=0C2FB52B4CF9E4152009ED3B8F5D87B7
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+{"reference_id":"00658412634afb2bd6fd0000012683","updated_at":"2020-08-20T11:04:48.074-03:00","amount":0.1,"currency_code":"ARS","from_cbu_hash":"8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","status":"APPROVED"}
+
+07:04:05.187 [print] {
+  "from_cbu_hash": "8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "00658412634afb2bd6fd0000012683",
+  "updated_at": "2020-08-20T11:04:48.074-03:00",
+  "to_cbu": "0170218940000003993471",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}
+
+07:04:05.195 karate.env system property was:  
+07:04:05.223 request:
+1 > POST http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 895
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00699042
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"893da252c4961448e1b0731ead2cf989afab5337dd0cb5fea109ab05352818a8","to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00699042","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:04:05.547 response time in milliseconds: 322,57
+1 < 412
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Thu, 20 Aug 2020 14:04:48 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=0C2FB87B4CF9E415005671DC3F261FD1
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"error_code":"daily_limit_exceeded","message":"Daily Transfer amount of 3000 exceeded."}
+
+07:04:05.551 [print] {
+  "error_code": "daily_limit_exceeded",
+  "message": "Daily Transfer amount of 3000 exceeded."
+}
+
+07:04:05.552 status code was: 412, expected: 201, response time: 323, url: http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers, response: {"error_code":"daily_limit_exceeded","message":"Daily Transfer amount of 3000 exceeded."}
+07:04:05.563 karate.env system property was:  
+07:04:05.633 request:
+1 > POST http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 895
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 70383768
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":0.1,"currency_code":"ARS","from_cbu_hash":"6432859aac7c2b7c23364f702974728e048ddde83a22dd3d385629b619b8c4f5","to_cbu":"0150501601000320856887","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"70383768","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+07:04:08.986 response time in milliseconds: 3350,83
+1 < 500
+1 < Connection: close
+1 < Content-Language: en-US
+1 < Content-Type: application/json
+1 < Date: Thu, 20 Aug 2020 14:04:48 GMT
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=0C2FBA144CF9E415005671DCF18CB0C7
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+{"error_code":"internal_server_error","message":"Unexpected error. Please try again."}
+
+07:04:08.987 [print] {
+  "error_code": "internal_server_error",
+  "message": "Unexpected error. Please try again."
+}
+
+07:04:08.988 status code was: 500, expected: 201, response time: 3351, url: http://newco3.arg.igrupobbva/apibbvachannel/transfers/transfers, response: {"error_code":"internal_server_error","message":"Unexpected error. Please try again."}
+V803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+{"error_code":"invalid_request","message":"The request performed is not supported."}
+
+06:57:32.080 [print]
+06:57:32.086 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}
+
+06:57:32.091 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}
+
+06:57:32.095 [print] {
+  "error_code": "invalid_request",
+  "message": "The request performed is not supported."
+}
+
+request performed is not supported."
+}
+
+
+ GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=032C07154CF9E415005671DCEF7373DB
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1jHEHAdWybiIg7g3kDzyBGYvnOx4yb1vZnrm6KXMxtiURlg3HxYs0B8/8YGBoR5lqUmUmDMmf9NeqvpUn8NDKdP37G51TxKlpcm+iviKJ2L6WLIatUI/5NtcWb1Ly5luj8=
+Error 405: Request method &#39;POST&#39; not supported
+
+
+13:03:29.478 [print] Error 405: Request method &#39;POST&#39; not supported
+
+13:03:29.479 status code was: 405, expected: 201, response time: 13, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &#39;POST&#39; not supported
+
+13:03:29.494 karate.env system property was:  
+13:03:29.511 [print] [
+  {
+    "cbu": "0170218920000000244899",
+    "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3"
+  },
+  {
+    "cbu": "0170218940000000676371",
+    "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a"
+  }
+]
+
+13:03:29.518 [print] 
+13:03:29.542 [print] 001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3
+13:03:29.568 request:
+1 > POST http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 834
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: newco3.arg.igrupobbva
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 > vnd.bbva.user-id: 00699042
+1 > vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+{"id":"53bd2ccd-6a2c-4abe-acb2-ae962b295686","amount":1000,"currency_code":"ARS","from_cbu_hash":null,"to_cbu":"0170218940000003993471","note":"Brunch with Camila","transfer_code":"VAR","ip_address":"34.100.201.26","timestamp":"2020-02-20T10:49:04-07:00","document_id":"00699042","fingerprint":{"time_stamp":"2020-02-20T10:49:04-07:00","hardware_id":"cc0af42f83a842a93ea95fc23dabc45f","simid":"122334565","geolocalization":{"latitude":"-18.011775864280644","longitude":"-70.24436930849632"},"device_model":"Samsung Galaxy J4 Core","device_name":"My Phone","os_name":"Android Donut","os_version":"Android 1.6","os_id":"746b9f55be4758b7","language":"Spanish","wifi_ssid":"TOWER1","connection_type":"746babcde345be4758b7","localization_area_id":"098af987ce88","compromised":false,"emulator":false},"risk":{"country":100,"operation":100}}
+
+13:03:29.586 response time in milliseconds: 12,44
+1 < 405
+1 < $WSEP: 
+1 < Allow: GET
+1 < Connection: Keep-Alive
+1 < Content-Language: en-US
+1 < Content-Type: text/html;charset=UTF-8
+1 < Date: Tue, 18 Aug 2020 20:04:11 GMT
+1 < Keep-Alive: timeout=40, max=8000
+1 < Transfer-Encoding: chunked
+1 < X-Powered-By: Servlet/3.1
+1 < x-wily-info: Clear guid=032C07824CF9E4152009ED3BCF99EB95
+1 < x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f3WeOxLB4w7h3GtP7kF+Pi9tbP9LW/DSNc5N/o1oOPk7Kpw9weA3qzW0oXML4cvJEsu7VALet8KEnqghlaUNBw4HnfDnTH5IYNSTeUom4Z/WIZ+zyLazOwvFGn4Zrg6zwQ=
+Error 405: Request method &#39;POST&#39; not supported
+
+
+13:03:29.589 [print] Error 405: Request method &#39;POST&#39; not supported
+
+13:03:29.593 status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &#39;POST&#39; not supported
+
+h%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'test') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:19:18 Expected ; but found :
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	              ^ in <eval> at line number 19 at column number 18
+10:45:58.131 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	baseUrl:'http://newco3.arg.igrupobbva',
+	BaseUrlDESA:'https://api-play.bbva.com.ar/apibbvachannel/accounts/accounts',
+	capa:'/apibbvachannel',
+	service:'/accounts',
+	endpoint: '/accounts',
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlDesaTransfer: 'https://api-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fapi-play.bbva.com.ar%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlTest:'https://signin-work.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'test') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:19:18 Expected ; but found :
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	              ^ in <eval> at line number 19 at column number 18
+10:45:58.147 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	baseUrl:'http://newco3.arg.igrupobbva',
+	BaseUrlDESA:'https://api-play.bbva.com.ar/apibbvachannel/accounts/accounts',
+	capa:'/apibbvachannel',
+	service:'/accounts',
+	endpoint: '/accounts',
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlDesaTransfer: 'https://api-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fapi-play.bbva.com.ar%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlTest:'https://signin-work.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'test') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:19:18 Expected ; but found :
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	              ^ in <eval> at line number 19 at column number 18
+10:45:58.194 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	baseUrl:'http://newco3.arg.igrupobbva',
+	BaseUrlDESA:'https://api-play.bbva.com.ar/apibbvachannel/accounts/accounts',
+	capa:'/apibbvachannel',
+	service:'/accounts',
+	endpoint: '/accounts',
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlDesaTransfer: 'https://api-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fapi-play.bbva.com.ar%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlTest:'https://signin-work.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'test') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:19:18 Expected ; but found :
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	              ^ in <eval> at line number 19 at column number 18
+tate=dquxgokntfljgwbhhjfumezs',
+	loginUrlDesaTransfer: 'https://api-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fapi-play.bbva.com.ar%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlTest:'https://signin-work.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'dev') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:14:1 Expected comma but found ident
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	^ in <eval> at line number 14 at column number 1
+10:23:04.390 evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	baseUrl: 'http://newco3.arg.igrupobbva',
+	BaseUrlDESA: 'https://api-play.bbva.com.ar/apibbvachannel/accounts/accounts',
+	capa:'/apibbvachannel',
+	service:'/accounts',
+	endpoint: '/accounts'
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlDesaTransfer: 'https://api-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fapi-play.bbva.com.ar%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	loginUrlTest:'https://signin-work.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fwork&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+  }
+  if (env == 'dev') {
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';
+   	config.capa:'/apibbvachannel';
+   	config.service:'/accounts';
+    config.endpoint: '/accounts';
+  } else if (env == 'docker') {
+  }
+  return config;
+}, <eval>:14:1 Expected comma but found ident
+	loginUrlDesa:'https://signin-play.bbva.com.ar/oauth/authorize?client_id=bbva-oauth-client&code_challenge=MChCW5vD-3h03HMGFZYskOSTir7II_MMTb8a9rJNhnI&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fsignin-play.bbva.com.ar%2Foauth%2Fbbvacli%2Fcallback%2Fplay&response_type=code&scope=openid+offline+accounts.savings.ars.read+accounts.current.ars.read+accounts.write&state=dquxgokntfljgwbhhjfumezs',
+	^ in <eval> at line number 14 at column number 1

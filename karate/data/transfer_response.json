@@ -1,0 +1,11 @@
+{
+  "from_cbu_hash": "113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007",
+  "note": "Brunch with Camila",
+  "amount": 0.1,
+  "reference_id": "#string",
+  "updated_at": "#string",
+  "to_cbu": "0170304520000030079915",
+  "transfer_code": "VAR",
+  "currency_code": "ARS",
+  "status": "APPROVED"
+}

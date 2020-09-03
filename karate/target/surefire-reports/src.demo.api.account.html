@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.demo.api.account</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">3</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-08-18 11:26:19 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:16]">[1.1:16] validar servicio Accounts.Cliente:'00671612' </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.2:17]">[1.2:17] validar servicio Accounts.Cliente:'00672309' </a>
+</div>
+<div class="nav-item passed">
+<a href="#[1.3:18]">[1.3:18] validar servicio Accounts.Cliente:'00670996' </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/demo/api/account.feature</span><span class="feature-description">validar servicio Accounts</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:16]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.1:16]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00671612' </span>
+</div>
+<div class="scenario-time passed">ms: 14079</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.1:16]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url baseUrl+capa+service+endpoint</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="preformatted" data-parent="1">11:25:44.105 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">127</div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">125</div>
+</div>
+<div class="step-row" data-parent="[1.1:16]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">13796</div>
+</div>
+<div class="preformatted" data-parent="6">11:26:02.230 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00671612
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.213 response time in milliseconds: 1678,56
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:44 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D1824CF9E4152009ED3B30AB885D
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{"cbu":"0170218920000000244899","cbu_hash":"001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3","account_type":"CURRENT","account_number":"202180024489","account_balance":"387715.83","currency_code":"ARS","updated_at":"2020-08-14T16:18:34Z"},{"cbu":"0170218940000000676371","cbu_hash":"336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a","account_type":"SAVINGS","account_number":"402180067637","account_balance":"249690.85","currency_code":"ARS","updated_at":"2020-08-14T16:26:55Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="8">11:26:04.213 [print] [
+  {
+    "account_number": "202180024489",
+    "account_type": "CURRENT",
+    "account_balance": "387715.83",
+    "updated_at": "2020-08-14T16:18:34Z",
+    "cbu": "0170218920000000244899",
+    "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+    "currency_code": "ARS"
+  },
+  {
+    "account_number": "402180067637",
+    "account_type": "SAVINGS",
+    "account_balance": "249690.85",
+    "updated_at": "2020-08-14T16:26:55Z",
+    "cbu": "0170218940000000676371",
+    "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.2:17]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.2:17]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00672309' </span>
+</div>
+<div class="scenario-time passed">ms: 163</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.2:17]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="9">
+<div class="step-ref bg-step">9</div>
+<div class="step-cell passed">* url baseUrl+capa+service+endpoint</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="9">11:26:04.229 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="10">
+<div class="step-ref bg-step">10</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="11">
+<div class="step-ref bg-step">11</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.2:17]bg">
+<div class="step-container" id="12">
+<div class="step-ref bg-step">12</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">154</div>
+</div>
+<div class="preformatted" data-parent="14">11:26:04.244 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00672309
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.369 response time in milliseconds: 144,89
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:45 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D5CF4CF9E4152009ED3B4B82929A
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0AsyXPm+slRDmngYinK3cUBDrgOMg9XygXNQhIiihM08f0Ch5KlmTwrhxgLEjOvu0r7D/OdrgqVLFEpzFqXWL+dt6ViIF1AlJaE3JXo/xSasjjyn+7qVZbpbhdBXfMXP6Q6
+[{"cbu":"0170118640000000846068","cbu_hash":"113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007","account_type":"SAVINGS","account_number":"401180084606","account_balance":"253931.71","currency_code":"ARS","updated_at":"2020-08-14T16:18:37Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="16">11:26:04.372 [print] [
+  {
+    "account_number": "401180084606",
+    "account_type": "SAVINGS",
+    "account_balance": "253931.71",
+    "updated_at": "2020-08-14T16:18:37Z",
+    "cbu": "0170118640000000846068",
+    "cbu_hash": "113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.3:18]">
+<div class="heading-container">
+<div class="scenario-tags">
+<a class="badge badge-primary" href="karate-tags.html">account</a>
+</div>
+<span class="scenario-keyword">Scenario Outline: [1.3:18]</span><span class="scenario-name">validar servicio Accounts.Cliente:'00670996' </span>
+</div>
+<div class="scenario-time passed">ms: 180</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1.3:18]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="17">
+<div class="step-ref bg-step">17</div>
+<div class="step-cell passed">* url baseUrl+capa+service+endpoint</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="17">11:26:04.385 karate.env system property was:</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="18">
+<div class="step-ref bg-step">18</div>
+<div class="step-cell passed">* def responseAccount = read('file:data/rta00671612.json')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="19">
+<div class="step-ref bg-step">19</div>
+<div class="step-cell passed">* def message_error = read('file:data/error_message_account.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1.3:18]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-cell passed">* def cbu = read('file:data/cbuHash.json')</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]}</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">166</div>
+</div>
+<div class="preformatted" data-parent="22">11:26:04.436 request:
+1 &gt; GET http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: newco3.arg.igrupobbva
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_152)
+1 &gt; vnd.bbva.user-id: 00670996
+1 &gt; vnd.bbva.user-scope: accounts.savings.ars.read accounts.current.ars.read
+
+11:26:04.587 response time in milliseconds: 156,60
+1 &lt; 200
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Language: en-US
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 18 Aug 2020 18:26:46 GMT
+1 &lt; Keep-Alive: timeout=40, max=8000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: Servlet/3.1
+1 &lt; x-wily-info: Clear guid=02D2D6874CF9E415005671DC8F5CC77F
+1 &lt; x-wily-servlet: Encrypt1 AceomkUZZyKyh4YJCPEK/Hy01Bh/GHOV803qgqU1t7JEhPDqJiNcxwFOQtEXX0As2JjdNw8oUFqQFVP1KkNAPNoi04dDRubNjls6ImpAW1g7uEx1/bAKynaZeVPCk8Q7g9cx7OmAmb7JCh7x9n+Ea3VDMa3l0QWrMJX4gk+vQF20LellBnbMJsyCp2zLoyT2
+[{"cbu":"0170304520000030079915","cbu_hash":"8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f","account_type":"CURRENT","account_number":"203043007991","account_balance":"248999.04","currency_code":"ARS","updated_at":"2020-08-14T16:18:40Z"}]</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="24">11:26:04.587 [print] [
+  {
+    "account_number": "203043007991",
+    "account_type": "CURRENT",
+    "account_balance": "248999.04",
+    "updated_at": "2020-08-14T16:18:40Z",
+    "cbu": "0170304520000030079915",
+    "cbu_hash": "8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f",
+    "currency_code": "ARS"
+  }
+]</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

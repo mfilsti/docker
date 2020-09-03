@@ -1,0 +1,18 @@
+## api play channel application configuration.
+syscfgpath: '/docker/apps/was/ears/doctype.ear/syscfg'
+sam.xmlDFFile: '/desa/apps/was/ears/doctype.ear/syscfg/sam.DBCP.xml'
+---
+api:
+  play:
+    doctype:
+      common:
+        dao:
+          mockMode: false
+      delete:
+        BusinessBaseUrl: http://docker_vbank_1:7070/ServicioInicial
+
+# --- SAM Parameters
+sam:
+  xmlFile: 'classpath:/sam/sam.xml'
+  application: APICHANNEL
+  module: SERVICIOS_PASIVAS

@@ -1,0 +1,37 @@
+  {
+    "id": "53bd2ccd-6a2c-4abe-acb2-ae962b295686",
+    "amount": 0.1,
+    "currency_code": "ARS",
+    "from_cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+    "to_cbu": "0170118640000000846068",
+    "note": "Brunch with Camila",
+    "transfer_code": "VAR",
+    "ip_address": "34.100.201.26",
+    "timestamp": "2020-02-20T10:49:04-07:00",
+    "document_id": "12023625",
+    "fingerprint": {
+      "time_stamp": "2020-02-20T10:49:04-07:00",
+      "hardware_id": "cc0af42f83a842a93ea95fc23dabc45f",
+      "simid": "122334565",
+      "geolocalization": {
+        "latitude": "-18.011775864280644",
+        "longitude": "-70.24436930849632"
+      },
+      "device_model": "Samsung Galaxy J4 Core",
+      "device_name": "My Phone",
+      "os_name": "Android Donut",
+      "os_version": "Android 1.6",
+      "os_id": "746b9f55be4758b7",
+      "language": "Spanish",
+      "wifi_ssid": "TOWER1",
+      "connection_type": "746babcde345be4758b7",
+      "localization_area_id": "098af987ce88",
+      "compromised": false,
+      "emulator": false
+    },
+    "risk": {
+      "country": 100,
+      "operation": 100
+    }
+  }
+  

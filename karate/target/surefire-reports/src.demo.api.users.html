@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.demo.api.users</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">2</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-08-07 11:25:09 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[1:7]">[1:7] get all users and then get the first user by id </a>
+</div>
+<div class="nav-item failed">
+<a href="#[2:18]">[2:18] create a user and then get it by id </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/demo/api/users.feature</span><span class="feature-description">sample karate api test script | for help, see: https://github.com/intuit/karate/wiki/ZIP-Release</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:7]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get all users and then get the first user by id </span>
+</div>
+<div class="scenario-time failed">ms: 0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref failed">1</div>
+<div class="step-cell failed">* scenario init failed</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="1">users.feature:7 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  if (!env) {&#13;
+    env = 'desa';&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+	baseUrl:'http://newco3.arg.igrupobbva',&#13;
+	capa:'/apibbvachannel',&#13;
+	service:'/accounts',&#13;
+	endpoint: '/accounts',&#13;
+  }&#13;
+  if (env == 'desa') {&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	config.capa:'/apibbvachannel';&#13;
+   	config.service:'/accounts';&#13;
+    config.endpoint: '/accounts';&#13;
+  } else if (env == 'docker') {&#13;
+  }&#13;
+  return config;&#13;
+}, &lt;eval&gt;:15:18 Expected ; but found :&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	              ^ in &lt;eval&gt; at line number 15 at column number 18</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:18]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">create a user and then get it by id </span>
+</div>
+<div class="scenario-time failed">ms: 0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref failed">2</div>
+<div class="step-cell failed">* scenario init failed</div>
+</div>
+<div class="time-cell failed">0</div>
+</div>
+<div class="preformatted" data-parent="2">users.feature:18 - evaluation of 'karate-config.js' failed: evaluation (js) failed: read('file:C:/dev/karate-0.9.6.RC4/karate-config.js'), evaluation (js) failed: function() {    &#13;
+  var env = karate.env; // get system property 'karate.env'&#13;
+  karate.log('karate.env system property was:', env);&#13;
+  if (!env) {&#13;
+    env = 'desa';&#13;
+  }&#13;
+  var config = {&#13;
+    env: env,&#13;
+	baseUrl:'http://newco3.arg.igrupobbva',&#13;
+	capa:'/apibbvachannel',&#13;
+	service:'/accounts',&#13;
+	endpoint: '/accounts',&#13;
+  }&#13;
+  if (env == 'desa') {&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	config.capa:'/apibbvachannel';&#13;
+   	config.service:'/accounts';&#13;
+    config.endpoint: '/accounts';&#13;
+  } else if (env == 'docker') {&#13;
+  }&#13;
+  return config;&#13;
+}, &lt;eval&gt;:15:18 Expected ; but found :&#13;
+   	config.baseUrl: 'http://newco3.arg.igrupobbva';&#13;
+   	              ^ in &lt;eval&gt; at line number 15 at column number 18</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

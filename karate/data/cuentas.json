@@ -1,0 +1,270 @@
+{
+  "00671612": [
+    {
+      "cbu": "0170218920000000244899",
+      "cbu_hash": "001f6a5ccfb04c68ea476c929367fa2d6a11331f4c9524a6a78bf67884b590c3",
+      "account_type": "CURRENT",
+      "account_number": "202180024489",
+      "account_balance": "390506.65",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-31T10:59:45Z"
+    },
+    {
+      "cbu": "0170218940000000676371",
+      "cbu_hash": "336f3d4abccb697db023816b42d16fe38de82950d91dd3a17169341a166c395a",
+      "account_type": "SAVINGS",
+      "account_number": "402180067637",
+      "account_balance": "253708.77",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-15T16:54:53Z"
+    }
+  ],
+  "00672309": [
+    {
+      "cbu": "0170118640000000846068",
+      "cbu_hash": "113a179f757b93e8eaaad48b95cf1e1de1fb1da2da7b2c82185f16aba30e5007",
+      "account_type": "SAVINGS",
+      "account_number": "401180084606",
+      "account_balance": "253442.95",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-31T10:59:45Z"
+    }
+  ],
+  "00670996": [
+    {
+      "cbu": "0170304520000030079915",
+      "cbu_hash": "8ce8c1b5027100e8b1f93a7c7bce1512526d784a39f1e09640541056188c989f",
+      "account_type": "CURRENT",
+      "account_number": "203043007991",
+      "account_balance": "250616.55",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-29T14:33:36Z"
+    }
+  ],
+  "00699042":[
+    {
+      "cbu": "0170141420000004414162",
+      "cbu_hash": "893da252c4961448e1b0731ead2cf989afab5337dd0cb5fea109ab05352818a8",
+      "account_type": "CURRENT",
+      "account_number": "201410441416",
+      "account_balance": "253644.66",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-29T14:33:36Z"
+    }
+  ],
+  "00897625": [
+    {
+      "cbu": "0170141420000004322030",
+      "cbu_hash": "5264b207b244dbce8e8e77fa1584afc88a0ac01d5a64591456e5a6986de07490",
+      "account_type": "CURRENT",
+      "account_number": "201410432203",
+      "account_balance": "243443.62",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-29T14:33:34Z"
+    },
+    {
+      "cbu": "0170141440000001156076",
+      "cbu_hash": "9d47f90ab3e41f69ae100240f79b73a7f0188d53ee87aba765094b7959adbfea",
+      "account_type": "SAVINGS",
+      "account_number": "401410115607",
+      "account_balance": "252994.81",
+      "currency_code": "ARS",
+      "updated_at": "2020-06-10T01:06:30Z"
+    },
+    {
+      "cbu": "0170141440000001839980",
+      "cbu_hash": "46e991b784682fce216625f1d132fb783a54d3de78769ef0ec4cb0ad7c1fdb04",
+      "account_type": "SAVINGS",
+      "account_number": "401410183998",
+      "account_balance": "10000.00",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-31T15:22:28Z"
+    }
+  ],
+  "01582612":[
+    {
+      "cbu": "0170218940000003695803",
+      "cbu_hash": "cafbbc0d9498621f9458c76dcf41ff687afb8cce0bae088fafed7e1893844e21",
+      "account_type": "SAVINGS",
+      "account_number": "402180369580",
+      "account_balance": "(115.71)",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-31T15:24:40Z"
+    }
+  ],
+  "00938713":[
+    {
+      "cbu": "0170218920000001062203",
+      "cbu_hash": "232ce6c5f6e19b6518d6d318e5027aefb3cab51446c587d385a1e7e7fa2df9cb",
+      "account_type": "CURRENT",
+      "account_number": "202180106220",
+      "account_balance": "0.00",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-29T14:12:34Z"
+    },
+    {
+      "cbu": "0170218940000003993471",
+      "cbu_hash": "c9afeaab7a73b5d6cb419d27fe1943c9f57fc3582f9247c2f02e47afb30ba989",
+      "account_type": "SAVINGS",
+      "account_number": "402180399347",
+      "account_balance": "639.72",
+      "currency_code": "ARS",
+      "updated_at": "2020-07-30T16:51:41Z"
+    },
+  ],
+  "70383768":[
+    {
+        "cbu": "0170099220000017602398",
+        "cbu_hash": "6432859aac7c2b7c23364f702974728e048ddde83a22dd3d385629b619b8c4f5",
+        "account_type": "CURRENT",
+        "account_number": "200991760239",
+        "account_balance": "996249.05",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-07T18:02:25Z"
+    },
+    {
+        "cbu": "0170005340000023288519",
+        "cbu_hash": "8b9d92005f7f36711ca83bf6ec1e9e34ba1a3e0bc0137f51b1254019fd44e2a4",
+        "account_type": "SAVINGS",
+        "account_number": "400052328851",
+        "account_balance": "5199977.90",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-13T03:32:45Z"
+    },
+    {
+        "cbu": "0170005340000023288991",
+        "cbu_hash": "2ebc56f5af6ad5d85bad05e45cbdb85270cd3920d8a19d170f9701e16055a220",
+        "account_type": "SAVINGS",
+        "account_number": "400052328899",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170005340000023289123",
+        "cbu_hash": "a3894757f7756a8e9a7462a76aa49b775430a29fb90af2da1bc893b0b80745a7",
+        "account_type": "SAVINGS",
+        "account_number": "400052328912",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170005340000023289291",
+        "cbu_hash": "159831024e846e9002126f70054ba64c2430f08e52227e88e11e2ef44318c47a",
+        "account_type": "SAVINGS",
+        "account_number": "400052328929",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170005340000023289369",
+        "cbu_hash": "d92ab36a07d8ee676b6cf4c97befb9a3969043f8c6499d9797117d90ecfe8912",
+        "account_type": "SAVINGS",
+        "account_number": "400052328936",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170007740000004000257",
+        "cbu_hash": "3888615eb750c8bcc4a0a0c4427d2cfe56091a8fde0d3448321e93c5b48d2c9b",
+        "account_type": "SAVINGS",
+        "account_number": "400070400025",
+        "account_balance": "4057.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-06-26T12:27:48Z"
+    },
+    {
+        "cbu": "0170007740000004000943",
+        "cbu_hash": "73d2eecef148f5e3074b0912f5a0846b583b37063979b6249e13b40391aed1da",
+        "account_type": "SAVINGS",
+        "account_number": "400070400094",
+        "account_balance": "9679.58",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-19T16:54:01Z"
+    },
+    {
+        "cbu": "0170007740000004004525",
+        "cbu_hash": "cfe32e518682318ecf29d2eafeb6c39d646b10361110f4fae0bdc8f9ac582d99",
+        "account_type": "SAVINGS",
+        "account_number": "400070400452",
+        "account_balance": "3100.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-03T20:26:38Z"
+    },
+    {
+        "cbu": "0170099240000057274252",
+        "cbu_hash": "0b02c6dd67639bb42ef1829b2e77c1af759097157324ceedbf345df41d911b16",
+        "account_type": "SAVINGS",
+        "account_number": "400995727425",
+        "account_balance": "4941322408.82",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-19T15:47:36Z"
+    },
+    {
+        "cbu": "0170167440000030337194",
+        "cbu_hash": "18ca1d449f963662154b7397211c14403491ab36a26e39fb0bea8010d90af99d",
+        "account_type": "SAVINGS",
+        "account_number": "401673033719",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170240040000030253388",
+        "cbu_hash": "ec384dd914718e48915b558502489124ef94da47d6c68f67b00b41afb45314f8",
+        "account_type": "SAVINGS",
+        "account_number": "402403025338",
+        "account_balance": "5017.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-03-03T18:16:07Z"
+    },
+    {
+        "cbu": "0170240040000030264788",
+        "cbu_hash": "31afe8566d1feedf24d93c3b3e920ed68c4afbdf2bbfecc2f0422ec13eb65934",
+        "account_type": "SAVINGS",
+        "account_number": "402403026478",
+        "account_balance": "100.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-07T17:59:24Z"
+    },
+    {
+        "cbu": "0170240040000030265156",
+        "cbu_hash": "e2618cce56e60029fddf080355d48cd14fc05fc9886c95032c02e93c1932cce8",
+        "account_type": "SAVINGS",
+        "account_number": "402403026515",
+        "account_balance": "0.00",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-20T12:50:39Z"
+    },
+    {
+        "cbu": "0170382340000000008637",
+        "cbu_hash": "3669bae6d8f06e7dd83038f6d6f809b439d84b28be2f0709c28aaf91db99ddb6",
+        "account_type": "SAVINGS",
+        "account_number": "403820000863",
+        "account_balance": "356375.51",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-05T08:42:11Z"
+    },
+    {
+        "cbu": "0170382340000000008941",
+        "cbu_hash": "d4de07ae113c8828450b7d8d147bacd8dec772d16a4ff29e31ac4d286e09f0c0",
+        "account_type": "SAVINGS",
+        "account_number": "403820000894",
+        "account_balance": "3748.24",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-07T17:58:11Z"
+    },
+    {
+        "cbu": "0170382340000000010573",
+        "cbu_hash": "e9b24c216993cb0feef2217cdcc26c1efb6c4ed448fde349543f884e5c2e2e13",
+        "account_type": "SAVINGS",
+        "account_number": "403820001057",
+        "account_balance": "3103.66",
+        "currency_code": "ARS",
+        "updated_at": "2020-08-12T17:08:46Z"
+    }
+]
+}

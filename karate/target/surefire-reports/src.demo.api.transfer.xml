@@ -1,0 +1,653 @@
+<testsuite failures="7" name="src/demo/api/transfer.feature" skipped="0" tests="7" time="2.3029">
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="1.590907">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.071392">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.082022">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00672309' ........................................ passed
+* set req.from_cbu_hash = cliente['00672309']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.08523">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00672309' ........................................ passed
+* set req.from_cbu_hash = cliente['00672309']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00938713', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00938713' ........................................ passed
+* set req.from_cbu_hash = cliente['00938713']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00672309']['cbu'] ............................. passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.282026">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00672309' ........................................ passed
+* set req.from_cbu_hash = cliente['00672309']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00938713', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00938713' ........................................ passed
+* set req.from_cbu_hash = cliente['00938713']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00672309']['cbu'] ............................. passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '70383768', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '70383768' ........................................ passed
+* set req.from_cbu_hash = '6432859aac7c2b7c23364f702974728e048ddde83a22dd3d385629b619b8c4f5' . passed
+* set req.to_cbu = '0150501601000320856887' ............................... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.097025">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 13, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00672309' ........................................ passed
+* set req.from_cbu_hash = cliente['00672309']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00938713', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00938713' ........................................ passed
+* set req.from_cbu_hash = cliente['00938713']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00672309']['cbu'] ............................. passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '70383768', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '70383768' ........................................ passed
+* set req.from_cbu_hash = '6432859aac7c2b7c23364f702974728e048ddde83a22dd3d385629b619b8c4f5' . passed
+* set req.to_cbu = '0150501601000320856887' ............................... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00670996' ........................................ passed
+* set req.from_cbu_hash = cliente['00670996']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 13, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+  <testcase classname="src.demo.api.transfer" name="realizar transferencia" time="0.094299">
+    <failure message="transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported&#10;">* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][0]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 177, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00671612' ........................................ passed
+* set req.from_cbu_hash = cliente['00671612']['cuentas'][1]['cbu_hash'] ... passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00672309' ........................................ passed
+* set req.from_cbu_hash = cliente['00672309']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 24, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00938713', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00938713' ........................................ passed
+* set req.from_cbu_hash = cliente['00938713']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00672309']['cbu'] ............................. passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '70383768', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '70383768' ........................................ passed
+* set req.from_cbu_hash = '6432859aac7c2b7c23364f702974728e048ddde83a22dd3d385629b619b8c4f5' . passed
+* set req.to_cbu = '0150501601000320856887' ............................... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 14, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00670996' ........................................ passed
+* set req.from_cbu_hash = cliente['00670996']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 13, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)&#13;
+
+* url baseUrl + layer + service + endpoint ................................ passed
+* def req = read('file:data/transfer_request.json') ....................... passed
+* def error = read('file:data/error_message_account.json') ................ passed
+* def response_transfer = read('file:data/transfer_response.json') ........ passed
+* def cliente = read('file:data/cliente.json') ............................ passed
+* print cliente['00671612']['cuentas'] .................................... passed
+* print cliente['00671612']['cuentas']['cbu_hash'] ........................ passed
+* print cliente['00671612']['cuentas'][0]['cbu_hash'] ..................... passed
+* headers {vnd.bbva.user-id: '00699042', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* set req.document_id = '00699042' ........................................ passed
+* set req.from_cbu_hash = cliente['00699042']['cbu_hash'] ................. passed
+* set req.to_cbu = cliente['00938713']['cuentas'][1]['cbu'] ............... passed
+* set req.amount = 1000 ................................................... passed
+And request req ........................................................... passed
+When method POST .......................................................... passed
+And print response ........................................................ passed
+Then status 201 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: transfer.feature:29 - status code was: 405, expected: 201, response time: 12, url: http://newco3.arg.igrupobbva/apibbvachannel/accounts/accounts, response: Error 405: Request method &amp;#39;POST&amp;#39; not supported
+&#13;
+	at ✽.Then status 201 (transfer.feature:29)</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,590 @@
+<testsuite failures="0" name="src/demo/account/account.feature" skipped="0" tests="10" time="3.70506">
+  <testcase classname="src.demo.account.account" name="validar servicio Accounts.Cliente:'00671612'" time="2.079375">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar servicio Accounts.Cliente:'00672309'" time="0.194647">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar servicio Accounts.Cliente:'00670996'" time="0.172848">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar respuesta de la consulta de todas las cuentas de un cliente (OK)" time="0.333398">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar consulta Ok al consultar por un cbu" time="0.222008">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar consulta Ok al consultar por un cbu" time="0.25774">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[1].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="validar que la respuesta de la consulta corresponda al cbu indicado" time="0.210446">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[1].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="Validar error en el request (Error 400)" time="0.094325">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[1].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="Validar error en el request (Error 400)" time="0.076921">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[1].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.demo.account.account" name="Validar error en el request (Error 400)" time="0.063352">
+    <system-out>* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00672309', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: '00670996', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[]' ............................................... passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+And match response[1].account_number == responseAccount[1].account_number . passed
+And match response[1].account_type == responseAccount[1].account_type ..... passed
+And match response[1].cbu == responseAccount[1].cbu ....................... passed
+And match response[1].cbu_hash == responseAccount[1].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[1].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And print response ........................................................ passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+* headers {vnd.bbva.user-id: '00671612', vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = cbu[0].cbu_hash ......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == '#[1]' .............................................. passed
+And match response[0].account_number == responseAccount[0].account_number . passed
+And match response[0].account_type == responseAccount[0].account_type ..... passed
+And match response[0].cbu == responseAccount[0].cbu ....................... passed
+And match response[0].cbu_hash == responseAccount[0].cbu_hash ............. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed
+* url baseUrl + pathAccount ............................................... passed
+* def responseAccount = read('file:data/rta00671612.json') ................ passed
+* def message_error = read('file:data/error_message_account.json') ........ passed
+* def cbu = read('file:data/cbuHash.json') ................................ passed
+Given headers {vnd.bbva.user-id: token[0].token, vnd.bbva.user-scope:[accounts.savings.ars.read accounts.current.ars.read]} . passed
+* param cbuHash = '' ...................................................... passed
+When method GET ........................................................... passed
+* print request ........................................................... passed
+* print response .......................................................... passed
+Then status 400 ........................................................... passed
+* print response .......................................................... passed
+* print message_error.E400 ................................................ passed
+And match response == message_error.E400 .................................. passed</system-out>
+  </testcase>
+</testsuite>
