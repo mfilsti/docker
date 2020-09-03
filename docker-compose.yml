@@ -1,7 +1,7 @@
 version: '3'
 services:
   prueba:
-    image: "docker/getting-started"
+    image: "openjdk:8-jre-alpine"
     ports:
       - "7070:7070"
     expose:
