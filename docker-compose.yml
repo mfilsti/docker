@@ -1,7 +1,14 @@
 version: '3'
 services:
   prueba:
-    image: "openjdk:8-jre-alpine"
+    image: "docker/getting-started"
     ports:
       - "7070:7070"
+    expose:
+      - "7070"
+    networks:
+      - newco-network3
+networks:
+  newco-network3:
+    driver: bridge
     
