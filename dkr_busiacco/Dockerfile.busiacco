@@ -1,0 +1,11 @@
+FROM openjdk:8-jre-alpine
+MAINTAINER rcamps
+COPY apibbvabusiness-accounts.war /opt/busiacco/lib/
+RUN mkdir -p  /docker/apps/was/ears/apibbvabusiness-accounts.ear/syscfg/
+COPY syscfg/* /docker/apps/was/ears/apibbvabusiness-accounts.ear/syscfg/
+ENV SPRING_APPLICATION_JSON='{"spring": {"cloud": {"config": {"server": {"git": {"uri": "/var/lib/busiacco/config-repo", "clone-on-start": true}}}}}}'
+ENV entorno='docker'
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/busiacco/lib/apibbvabusiness-accounts.war"]
+VOLUME /var/lib/busiacco/config-repo
+EXPOSE 9071

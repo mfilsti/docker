@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<log4j:configuration>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona 
+		para el Monitor de Servicios SAM -->
+	<appender name="ASYNC_APPENDER_MONITOR_SAM"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_MONITOR_SAM" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona 
+		para el login del cliente unicamente -->
+	<appender name="ASYNC_APPENDER_LOGIN_CLIENTE"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_LOGIN_CLIENTE" />
+		<appender-ref ref="SYSTEM_LOG_LOGIN_CLIENTE" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona 
+		para el buffer de las tx -->
+	<appender name="ASYNC_APPENDER_BUFFER_TX"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_BUFFER_TX" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona -->
+	<appender name="ASYNC_APPENDER_APLICACION"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_CONSOLA" />
+		<appender-ref ref="LOG_APLICACION" />
+		<appender-ref ref="SYSTEM_LOG_APLICACION" />
+		<appender-ref ref="SYSTEM_LOG_SEG_INF" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona 
+		para los mensajes FDS unicamente -->
+	<appender name="ASYNC_APPENDER_FDS"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="SYSTEM_LOG_FDS" />
+	</appender>
+
+	<appender name="ASYNC_APPENDER_ESB_GWYU"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_ESB_GWYU" />
+		<appender-ref ref="SYSTEM_LOG_ESB_GWYU" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona -->
+	<appender name="ASYNC_APPENDER_KIBANA"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_EVENTOS_KIBANA" />
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona -->
+	<appender name="ASYNC_APPENDER_SERVICIOS_FRONT_KIBANA"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="LOG_SERVICIOS_FRONT_KIBANA" />
+	</appender>
+
+	<!-- Este appender genera el log diarimente en un archivo fisico, en PRODUCCION 
+		debe estar en INFO -->
+	<appender name="LOG_MONITOR_SAM"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/clonId${clonId}-${log4j.monitor.sam}" />
+		<param name="datePattern" value=".yyyy-MM-dd" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd/MM/yy HH:mm:ss,SSS} # %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera el log diarimente en un archivo fisico, en PRODUCCION 
+		debe estar en INFO -->
+	<appender name="LOG_LOGIN_CLIENTE"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/logstash/clonId${clonId}-${log4j.login.cliente.kibana}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera el log para los buffers de las transacciones -->
+	<appender name="LOG_BUFFER_TX"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/logstash/clonId${clonId}-${log4j.buffers.kibana}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera el log diarimente en un archivo fisico, en PRODUCCION 
+		debe estar en INFO -->
+	<appender name="LOG_APLICACION"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/clonId${clonId}-${log4j.logFile}" />
+		<param name="datePattern" value=".yyyy-MM-dd" />
+		<param name="threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%X{sessionId} %X{clonId} %d{dd/MM/yy HH:mm:ss,SSS} %-5p [%c{1}] - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender realiza la salida del log por consola en PRODUCCION debe 
+		estar en OFF -->
+	<appender name="LOG_CONSOLA"
+		class="org.apache.log4j.ConsoleAppender">
+		<param name="target" value="System.out" />
+		<param name="threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%X{sessionId} %X{clonId} %d{dd/MM/yy HH:mm:ss,SSS} %-5p [%c{1}] - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera el log que necesita la gente de ESB, para analizar 
+		las estadisticas -->
+	<appender name="LOG_ESB_GWYU"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/clonId${clonId}-${log4j.logFile.gateway.pool.stats}" />
+		<param name="datePattern" value=".yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema -->
+	<appender name="SYSTEM_LOG_LOGIN_CLIENTE"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL1" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%23X{sessionId} # %X{clonId} # %d{dd/MM/yy HH:mm:ss} # %-5p # %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema -->
+	<appender name="SYSTEM_LOG_APLICACION"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL2" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<param name="threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%23X{sessionId} %X{clonId} %d{dd/MM/yy HH:mm:ss} %-5p [%c{1}] - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema -->
+	<appender name="SYSTEM_LOG_SEG_INF"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL5" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%23X{sessionId} # %X{clonId} # %d{dd/MM/yy HH:mm:ss} # %-5p # [%c{1}] # %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema -->
+	<appender name="SYSTEM_LOG_FDS"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL4" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<param name="threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%X{sessionId} # %X{clonId} # %d{dd/MM/yy HH:mm:ss} # %-5p # %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema -->
+	<appender name="SYSTEM_LOG_ESB_GWYU"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL5" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+
+	<!-- Genera el nuevo log para Seguridad Informatica -->
+	<appender name="SEGURIDAD_INFORMATICA_LOG_NUEVO"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/logstash/clonId${clonId}-${log4j.nuevo.log.seguridad.informatica}" />
+		<param name="datePattern" value=".yyyy-MM-dd" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- <param name="ConversionPattern" value="%X{sessionId} # %X{clonId} 
+				# %d{dd/MM/yy HH:mm:ss} # %-5p # [%c{1}] # %m%n" /> -->
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- Este appender genera los logs de sistema para el nuevo log de Seg Inf -->
+	<appender name="SYSTEM_LOG_SEG_INF_NUEVO"
+		class="org.apache.log4j.net.SyslogAppender">
+		<param name="Facility" value="LOCAL19" />
+		<param name="SyslogHost" value="${log4j.sys.log.SyslogHost}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%23X{sessionId} # %X{clonId} # %d{dd/MM/yy HH:mm:ss} # %-5p # [%c{1}] # %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Implementacion para hacer los appenders trabajar de manera asyncrona -->
+	<appender
+		name="ASYNC_APPENDER_SEGURIDAD_INFORMATICA_LOG_NUEVO"
+		class="org.apache.log4j.AsyncAppender">
+		<param name="BufferSize" value="128" />
+		<param name="Blocking" value="true" />
+		<appender-ref ref="SEGURIDAD_INFORMATICA_LOG_NUEVO" />
+		<appender-ref ref="SYSTEM_LOG_SEG_INF_NUEVO" />
+	</appender>
+
+	<!-- <appender name="SYSTEM_LOG_KIBANA" class="org.apache.log4j.net.SyslogAppender"> -->
+	<!-- <param name="Facility" value="LOCAL1" /> -->
+	<!-- <param name="SyslogHost" value="${log4j.sys.log.kibana}" /> -->
+	<!-- <param name="threshold" value="INFO" /> -->
+	<!-- <layout class="org.apache.log4j.PatternLayout"> -->
+	<!-- <param name="ConversionPattern" -->
+	<!-- value="%m%n" /> -->
+	<!-- </layout> -->
+	<!-- </appender> -->
+
+	<appender name="LOG_EVENTOS_KIBANA"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/logstash/clonId${clonId}-${log4j.eventos.informar.kibana}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="LOG_SERVICIOS_FRONT_KIBANA"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file"
+			value="${log4j.logPath}/logstash/clonId${clonId}-${log4j.servicios.front.kibana}" />
+		<param name="threshold" value="INFO" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<!-- ar.org.bbva -->
+	<category name="ar.org.bbva">
+		<priority value="OFF" />
+	</category>
+	<category name="ar.org.bbva.mapping">
+		<priority value="ERROR" />
+	</category>
+	<category name="ar.org.bbva.gateway.GatewayRequester">
+		<priority value="DEBUG" />
+	</category>
+	<category name="ar.org.bbva.servers">
+		<priority value="OFF" />
+	</category>
+	<category name="ar.org.bbva.testsStandalone">
+		<priority value="OFF" />
+	</category>
+	<!-- Log para la gente de ESB -->
+	<category name="dump.ar.org.bbva.gateway">
+		<priority value="INFO" />
+	</category>
+	<category
+		name="ar.org.bbva.gateway.stats.GatewayPoolStatsMgr.saveInfo"
+		additivity="false">
+		<appender-ref ref="ASYNC_APPENDER_ESB_GWYU" />
+		<priority value="INFO" />
+	</category>
+	<!-- External classes -->
+	<category name="org.apache">
+		<priority value="ERROR" />
+	</category>
+	<category name="org.springframework.beans">
+		<priority value="OFF" />
+	</category>
+	<category name="org.springframework.web">
+		<priority value="OFF" />
+	</category>
+	<category name="org.apache.axis">
+		<priority value="OFF" />
+	</category>
+
+	<category name="httpclient.wire.header">
+		<priority value="OFF" />
+	</category>
+
+	<category name="httpclient.wire.content">
+		<priority value="OFF" />
+	</category>
+
+	<category name="org.apache.axis.transport.http">
+		<priority value="OFF" />
+	</category>
+
+	<category name="org.apache.commons.digester">
+		<priority value="OFF" />
+	</category>
+	<category name="org.apache.axis.transport.http">
+		<priority value="OFF" />
+	</category>
+	<category
+		name="org.springframework.security.web.access.intercept.FilterSecurityInterceptor">
+		<priority value="INFO" />
+	</category>
+	<!-- <category name="org.springframework.cache"> -->
+	<!-- <priority value="DEBUG" /> -->
+	<!-- </category> -->
+	<category name="java.security.cert">
+		<priority value="OFF" />
+	</category>
+	<category name="iaik">
+		<priority value="OFF" />
+	</category>
+	<category name="ar.org.bbva.pki">
+		<priority value="OFF" />
+	</category>
+
+	<!-- others -->
+	
+    <category name="httpclient.wire.header">
+        <priority value="debug"/>
+    </category>
+
+    <category name="httpclient.wire.content">
+        <priority value="debug"/>
+    </category>
+
+    <category name="org.apache.axis.transport.http">
+      <priority value="debug" />
+    </category>
+	<category name="ar.org.bbva.util">
+		<priority value="OFF" />
+	</category>
+	<category name="ar.com.itrsa.sam.impl">
+		<priority value="DEBUG" />
+	</category>
+	<!-- ar.com.bbva -->
+	<category name="com.bbva.sam.bbvaPaq">
+		<priority value="DEBUG" />
+	</category>
+	<category
+		name="com.bbva.ar.reports.controld.ControlDPDFGenerator">
+		<priority value="DEBUG" />
+	</category>
+	<category name="ar.com.bbva.samx.ws">
+		<priority value="DEBUG" />
+	</category>
+	<category
+		name="ar.com.bbva.samx.ws.engineconfig.sec.handlers.Log4JMsgHandler">
+		<priority value="INFO" />
+	</category>
+	<category name="ar.com.bbva">
+		<priority value="INFO" />
+	</category>
+	<category name="ar.com.bbva.preciosTrading.proveedor.reuters">
+		<priority value="INFO" />
+	</category>
+	<category name="ar.com.bbva.samx.ws.DynaBeanDeserializer">
+		<priority value="OFF" />
+	</category>
+	<category name="ar.com.bbva.fnet.fnetcore.init">
+		<priority value="ERROR" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.Log4jListener">
+		<priority value="INFO" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.Log4jMonitorSAMListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_MONITOR_SAM" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.Log4jIngresoClienteListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_LOGIN_CLIENTE" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.Log4jTransaccionEjecutadaListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_BUFFER_TX" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.FDSLogListener"
+		additivity="false">
+		<priority value="DEBUG" />
+		<appender-ref ref="ASYNC_APPENDER_FDS" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.Log4jSeguridadInformaticaListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref
+			ref="ASYNC_APPENDER_SEGURIDAD_INFORMATICA_LOG_NUEVO" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.web.util.RequestLoggingFilter">
+		<priority value="DEBUG" />
+	</category>
+	<category name="ar.com.bbva.fnet.hibrido">
+		<priority value="INFO" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.web.responses.FnetResponse">
+		<priority value="INFO" />
+	</category>
+	<category name="com.fasterxml">
+		<priority value="OFF" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.exception.business.BusinessException">
+		<priority value="OFF" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.KibanaListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_KIBANA" />
+	</category>
+	<category
+		name="ar.com.bbva.fnet.fnetcore.listeners.log.LogEventoCoreListener"
+		additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_SERVICIOS_FRONT_KIBANA" />
+	</category>
+
+	<category name="httpclient.wire.header">
+		<priority value="debug" />
+	</category>
+
+	<category name="httpclient.wire.content">
+		<priority value="debug" />
+	</category>
+
+	<category name="org.apache.axis.transport.http">
+		<priority value="debug" />
+	</category>
+
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="ASYNC_APPENDER_APLICACION" />
+	</root>
+
+</log4j:configuration>
