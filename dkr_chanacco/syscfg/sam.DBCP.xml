@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE samx-ds-global-factory 
+PUBLIC "-//Service Access Manager//DTD Service Access Manager Ext Configuration//EN" 
+"file:/D:/users/karina/Java/workspace_consolidar/SAMX/src/ar/com/bbva/samx/ds/samx-ds-config.dtd">
+
+<samx-ds-global-factory>
+    <!--Los elementos deben ir en este orden (dbcp-datasource-factory*,dbcp-driver-datasource-factory*,datasource-factory*,set-property*)  -->
+	
+    <dbcp-driver-datasource-factory 
+        name="DB_APIPLAY" 
+        instance="MYSYBASE" 
+        maxActive="64"
+        maxIdle="8"
+        minIdle="8"
+        whenExhaustedAction="WHEN_EXHAUSTED_FAIL"
+        maxWait="30000"
+        testOnBorrow="false"
+        testOnReturn="false"
+        timeBetweenEvictionRuns="-1"
+        numTestPerEvictionRun="10"
+        minEvictableIdleTime="-1"
+        testWhileIdle="false"
+        usePasswordCipher="false" 
+        driverPropFile="${syscfgpath}/apiplay-db.properties" />	
+
+</samx-ds-global-factory>

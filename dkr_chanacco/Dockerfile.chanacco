@@ -1,0 +1,11 @@
+FROM openjdk:8-jre-alpine
+MAINTAINER rcamps
+COPY apibbvachannel-accounts.war /opt/chanacco/lib/
+RUN mkdir -p /docker/apps/was/ears/apibbvachannel-accounts.ear/syscfg/
+COPY syscfg/* /docker/apps/was/ears/apibbvachannel-accounts.ear/syscfg/
+ENV SPRING_APPLICATION_JSON='{"spring": {"cloud": {"config": {"server": {"git": {"uri": "/var/lib/chanacco/config-repo", "clone-on-start": true}}}}}}'
+ENV entorno='docker'
+ENTRYPOINT ["/usr/bin/java"]
+CMD ["-jar", "/opt/chanacco/lib/apibbvachannel-accounts.war"]
+VOLUME /var/lib/chanacco/config-repo
+EXPOSE 8899
